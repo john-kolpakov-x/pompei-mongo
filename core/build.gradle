@@ -5,8 +5,11 @@ dependencies {
   testCompileOnly "org.projectlombok:lombok:$lombokVersion"
   testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
 
-  implementation "org.mongodb:mongo-java-driver:$mongoDriverVersion"
+  //implementation "org.mongodb:mongo-java-driver:$mongoDriverVersion"
+  implementation "org.mongodb:mongodb-driver:$mongodbDriverVersion"
 
   implementation "ch.qos.logback:logback-classic:$logbackVersion"
   implementation "org.slf4j:slf4j-api:$slf4jApiVersion"
+
+  testImplementation "kz.greetgo.util:greetgo-util:$greetgoUtilVersion"
 }

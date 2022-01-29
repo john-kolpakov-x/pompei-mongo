@@ -6,7 +6,7 @@ networks:
 
 services:
 
-  mongo:                #              docker exec -it mybpm-debug-mongo mongo
+  mongo:                #              docker exec -it pmd-mongo mongo
     image: mongo:5.0.5
     container_name: pmd-mongo
     mem_limit: 700M
@@ -23,7 +23,7 @@ services:
       - main
 
   mongo-express:
-    image: mongo-express:0.54.0
+    image: mongo-express:1.0.0-alpha.4
     container_name: pmd-mongo-express
     mem_limit: 200M
     restart: always
